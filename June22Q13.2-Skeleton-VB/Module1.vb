@@ -26,6 +26,7 @@
                 num = rnd.Next(0, 500)
             End While
             handOfCards(i) = deck(num)
+            deck(num) = -1;
         Next
         Array.Sort(handOfCards)
         Return handOfCards
